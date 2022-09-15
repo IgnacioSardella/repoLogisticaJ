@@ -1,0 +1,51 @@
+// nesting
+
+div.bg-grey{
+    background-color: map-get($map: $pColores, $key: 'white');
+    font-size: $txtSm + 0.1rem;
+    @media (min-width: 376px) {
+        font-size: $txtMd;
+    }
+    @media (min-width: 992px) {
+        font-size: $txtMd + 0.4rem;
+    }
+}
+
+nav{
+    background: linear-gradient(to right, #102D75, #071536); 
+    a.navbar-brand{
+        margin-right: 0;
+        img{
+            width: 25vw;
+            @media (min-width: 376px) {
+                width: 20vw;
+            }
+            @media (min-width: 578px) {
+                width: 15vw;
+            }
+            @media (min-width: 992px) {
+                width: 10vw;
+            }
+            @media (min-width: 1280px) {
+                width: 7vw;
+            }
+        }
+    }
+    
+    div{
+        padding: 0vw 3vw;
+        list-style: none;
+        a.nav-link{
+            // color: map-get($map: $pColores, $key: 'orng');
+            font-size: $txtMd + 0.2rem;
+            font-weight: $txtGrues;
+            font-family: $mainFont;
+            &:hover{
+                color: gold;
+            }
+            @media (min-width: 768px){
+                font-size: $txtLg;
+            }
+        }
+    }
+}

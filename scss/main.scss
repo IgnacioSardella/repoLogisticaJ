@@ -1,3 +1,14 @@
-nav{
-    background-color: #102D75;
+// imports
+
+@import "general/_vars.scss";
+@import "general/_fonts.scss";
+@import "general/_commons.scss";
+@import "_navBar.scss";
+
+main div.portada{
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
