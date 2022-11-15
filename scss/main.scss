@@ -4,11 +4,5 @@
 @import "general/_fonts.scss";
 @import "general/_commons.scss";
 @import "_navBar.scss";
+@import "_front.scss";
 
-main div.portada{
-    background-image: url(../img/portada.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
-}

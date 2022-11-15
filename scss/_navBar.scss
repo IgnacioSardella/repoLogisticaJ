@@ -13,6 +13,9 @@ div.bg-grey{
 
 nav{
     background: linear-gradient(to right, #102D75, #071536); 
+    div.container-fluid{
+        margin: 0 10% 0 15%;
+    }
     a.navbar-brand{
         margin-right: 0;
         img{
@@ -21,13 +24,13 @@ nav{
                 width: 20vw;
             }
             @media (min-width: 578px) {
-                width: 15vw;
+                width: 13vw;
             }
             @media (min-width: 992px) {
-                width: 10vw;
+                width: 8vw;
             }
             @media (min-width: 1280px) {
-                width: 7vw;
+                width: 6vw;
             }
         }
     }
@@ -35,16 +38,19 @@ nav{
     div{
         padding: 0vw 3vw;
         list-style: none;
-        a.nav-link{
-            // color: map-get($map: $pColores, $key: 'orng');
+        .nav-link{
+            color: map-get($map: $pColores, $key: 'white') !important;
             font-size: $txtMd + 0.2rem;
             font-weight: $txtGrues;
             font-family: $mainFont;
+            text-align: start;
+            border: none;
+            background: none;
             &:hover{
-                color: gold;
+                color: gold !important;
             }
             @media (min-width: 768px){
-                font-size: $txtLg;
+                font-size: $txtLg - 0.2rem;
             }
         }
     }

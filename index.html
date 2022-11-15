@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <title>Logistica</title>
 </head>
+
 <body>
     <div class="bg-grey">
         <div class="container-fluid d-md-flex justify-content-center ">
@@ -16,31 +20,99 @@
             <p class="px-3 py-1 my-0 text-center">Email: julianejemplo@transportesjulian.com</p>
         </div>
     </div>
-    <header>
-        <nav class="navbar py-0 navbar-expand-lg navbar-dark bg-blue sticky-top">
-            <div class="container-fluid mx-5">
+    <header class="navbar-sticky sticky-top">
+        <nav class="navbar py-0 navbar-expand-lg navbar-dark bg-blue">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="logo empresa" >
+                    <img src="img/logo.png" alt="logo empresa">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link px-lg-4" href="#">Quienes somos</a>
-                        <a class="nav-link px-lg-4" href="#">Servicios</a>
-                        <a class="nav-link px-lg-4" href="#">Contacto</a>
+                        <a class="btn nav-link px-lg-4" href="#about">QUIENES SOMOS</a>
+                        <a class="btn nav-link px-lg-4" href="#">SERVICIOS</a>
+                        <a class="btn nav-link px-lg-4" href="#">CONTACTO</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="portada">
-            
-        </div>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-next carousel-item-start" data-interval="4000">
+                <div class="overlay-image" style="background-image: url(./img/prueba2.jpg);"></div>
+                <div class="container">
+                    <div class="carousel-caption text-lg-start">
+                        <div class="bg-caption">
+                            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Transportes Julian</h1>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Tu solución en movimiento</p>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#about">Quienes somos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="1000">
+                <div class="overlay-image" style="background-image: url(./img/portada.jpg);"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Logística y Distribución</h3>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s">Desde tu pick-up hasta el warehouse y distribución última milla</p>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#">Conoce nuestros sevicios</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active carousel-item-start" data-interval="500">
+                <div class="overlay-image" style="background-image: url(./img/slider3.jpg);"></div>
+
+
+                <div class="container">
+                    <div class="carousel-caption text-lg-end">
+                        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Contamos con</h3>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s">Cobertura a nivel nacional en la Republica Argentina</p>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#">Contactate con nosotros</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="about">
+        <div class="container text-about py-4">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="logo-about d-flex justify-content-center pb-4">
+                        <img class="img-logo-about animate__animated animate__fadeInLeft animate__delay-1s" src="img/aboutUs.png" alt="logo quienes somos">
+                    </div>
+                    <div class="text-about px-lg-3 animate__animated animate__fadeInRight animate__delay-1s">
+                        <p class="px-lg-5">Somos una empresa que desde 2012 se enfoca en brindar <b>soluciones logisticas</b> y de transporte a nuestros clientes, siendo tu mejor alternativa logrando combinar la reduccion de costos y la calidad de nuestro servicio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Rubik:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Rubik:wght@300;500&display=swap&family=Raleway:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0; }
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif; }
+  font-family: "DM Sans", sans-serif; }
 
 body {
   width: 100%;
@@ -16,9 +16,15 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
+@keyframes textAlpha {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
 .bodyscroll {
-  overflow-x: hidden;
-  overflow-y: auto;
   width: 100%; }
 
 div.bg-grey {
@@ -33,6 +39,8 @@ div.bg-grey {
 
 nav {
   background: linear-gradient(to right, #102D75, #071536); }
+  nav div.container-fluid {
+    margin: 0 10% 0 15%; }
   nav a.navbar-brand {
     margin-right: 0; }
     nav a.navbar-brand img {
@@ -42,29 +50,87 @@ nav {
           width: 20vw; } }
       @media (min-width: 578px) {
         nav a.navbar-brand img {
-          width: 15vw; } }
+          width: 13vw; } }
       @media (min-width: 992px) {
         nav a.navbar-brand img {
-          width: 10vw; } }
+          width: 8vw; } }
       @media (min-width: 1280px) {
         nav a.navbar-brand img {
-          width: 7vw; } }
+          width: 6vw; } }
   nav div {
     padding: 0vw 3vw;
     list-style: none; }
-    nav div a.nav-link {
+    nav div .nav-link {
+      color: #e6e6e6 !important;
       font-size: 1.6rem;
       font-weight: 700;
-      font-family: "DM Sans", sans-serif; }
-      nav div a.nav-link:hover {
-        color: gold; }
+      font-family: "DM Sans", sans-serif;
+      text-align: start;
+      border: none;
+      background: none; }
+      nav div .nav-link:hover {
+        color: gold !important; }
       @media (min-width: 768px) {
-        nav div a.nav-link {
-          font-size: 2rem; } }
+        nav div .nav-link {
+          font-size: 1.8rem; } }
 
-main div.portada {
-  background-image: url(../img/portada.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100vh; }
+div.carousel-inner .carousel-item {
+  height: 65rem;
+  background-color: #000;
+  color: white;
+  position: relative; }
+  div.carousel-inner .carousel-item .overlay-image {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; }
+  div.carousel-inner .carousel-item .carousel-caption {
+    bottom: unset;
+    top: 22rem; }
+
+div.carousel-inner h1, div.carousel-inner h3 {
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  color: #e6e6e6; }
+  @media (min-width: 992px) {
+    div.carousel-inner h1, div.carousel-inner h3 {
+      font-size: 4rem; } }
+
+div.carousel-inner p {
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+  color: #e6e6e6; }
+  @media (min-width: 992px) {
+    div.carousel-inner p {
+      font-size: 2rem; } }
+
+@media (min-width: 576px) {
+  div.carousel-inner a {
+    font-size: 1.8rem; } }
+
+section#about {
+  background-color: white; }
+  section#about div.text-about:hover p {
+    color: #000; }
+    section#about div.text-about:hover p b {
+      color: #30d5ff; }
+  section#about div.text-about img {
+    width: 22vh; }
+  @media (min-width: 1650px) {
+    section#about div.text-about {
+      padding: 0 50px 0 50px; } }
+  section#about div.text-about p {
+    font-size: 2rem;
+    color: #30d5ff;
+    font-family: 'Raleway';
+    font-weight: 800;
+    text-align: center; }
+    @media (min-width: 992px) {
+      section#about div.text-about p {
+        font-size: 2.5rem; } }
+    section#about div.text-about p b {
+      color: #000; }

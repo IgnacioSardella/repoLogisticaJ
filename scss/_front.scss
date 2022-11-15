@@ -1,0 +1,78 @@
+div.carousel-inner {
+    .carousel-item{
+        height: 65rem;
+        background-color: #000;
+        color: white;
+        position: relative;
+        .overlay-image{
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        .carousel-caption{
+            bottom: unset;
+            top: 22rem;
+        }
+    }
+    h1,h3{
+        font-size: $txtXl;
+        font-family: $secondaryFont;
+        color: map-get($map: $pColores, $key: "white");
+        @media (min-width: 992px) {
+            font-size: $txtXxl;
+        }
+    }
+    p{
+        font-size: $txtMd;
+        font-family: $secondaryFont;
+        color: map-get($map: $pColores, $key: "white");
+        @media (min-width: 992px) {
+            font-size: $txtLg;
+        }
+    }
+    a{
+        @media (min-width: 576px) {
+            font-size: $txtLg - 0.2rem;
+        }
+    }
+}
+
+section#about {
+    
+    
+    background-color: rgb(255, 255, 255);
+    div.text-about {
+        &:hover{
+            p{
+                color: #000;
+                b{
+                    color: #30d5ff;
+                }
+            }
+        }
+        img{
+            width: 22vh;
+        }
+        @media (min-width: 1650px) {
+            padding: 0 50px 0 50px;
+        }
+        p{
+            font-size: 2rem;
+            color: #30d5ff;
+            font-family: 'Raleway';
+            font-weight: $txtHeav;
+            text-align: center;
+            @media (min-width: 992px) {
+                font-size: 2.5rem;
+            }
+            b{
+                color: #000;
+            }
+        }
+    }
+}
