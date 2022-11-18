@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <title>Logistica</title>
@@ -33,85 +34,252 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="btn nav-link px-lg-4" href="#about">QUIENES SOMOS</a>
-                        <a class="btn nav-link px-lg-4" href="#">SERVICIOS</a>
-                        <a class="btn nav-link px-lg-4" href="#">CONTACTO</a>
+                        <a class="btn nav-link px-lg-4" href="#about-us">QUIENES SOMOS</a>
+                        <a class="btn nav-link px-lg-4" href="#services">SERVICIOS</a>
+                        <a class="btn nav-link px-lg-4" href="#contact">CONTACTO</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
-                aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                class=""></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item carousel-item-next carousel-item-start" data-interval="4000">
-                <div class="overlay-image" style="background-image: url(./img/prueba2.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption text-lg-start">
-                        <div class="bg-caption">
-                            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Transportes Julian</h1>
-                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Tu solución en movimiento</p>
-                            <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#about">Quienes somos</a></p>
+    <main>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item-next carousel-item-start" data-interval="4000">
+                    <div class="overlay-image" style="background-image: url(./img/prueba2.jpg);"></div>
+                    <div class="container">
+                        <div class="carousel-caption text-lg-start">
+                            <div class="bg-caption">
+                                <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Transportes Julian
+                                </h1>
+                                <p class="animate__animated animate__fadeInUp animate__delay-1s">Tu solución en
+                                    movimiento
+                                </p>
+                                <p class="animate__animated animate__fadeInUp animate__delay-1s"><a
+                                        class="btn btn-lg btn-primary" href="#about-us">Quienes somos</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="1000">
+                    <div class="overlay-image" style="background-image: url(./img/portada.jpg);"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Logística y Distribución
+                            </h3>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Desde tu pick-up hasta el
+                                warehouse y distribución última milla</p>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s"><a
+                                    class="btn btn-lg btn-primary" href="#services">Conoce nuestros sevicios</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active carousel-item-start" data-interval="500">
+                    <div class="overlay-image" style="background-image: url(./img/slider3.jpg);"></div>
+                    <div class="container">
+                        <div class="carousel-caption text-lg-end">
+                            <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Contamos con</h3>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Cobertura a nivel nacional
+                                en
+                                la Republica Argentina</p>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s"><a
+                                    class="btn btn-lg btn-primary" href="#contact">Contactate con nosotros</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" data-interval="1000">
-                <div class="overlay-image" style="background-image: url(./img/portada.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Logística y Distribución</h3>
-                        <p class="animate__animated animate__fadeInUp animate__delay-1s">Desde tu pick-up hasta el warehouse y distribución última milla</p>
-                        <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#">Conoce nuestros sevicios</a></p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="about-us">
+            <section id="about">
+                <div class="container text-about py-4">
+                    <div class="row justify-content-center" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="col-10">
+                            <div class="logo-about d-flex justify-content-center pb-4" id="about-us">
+                                <img class="img-logo-about" src="img/aboutUs.png" alt="logo quienes somos">
+                            </div>
+                            <div class="text-about px-lg-3">
+                                <p class="px-lg-5">Somos una empresa que desde 2012 se enfoca en brindar <b>soluciones
+                                        logisticas</b> y de transporte a nuestros clientes, siendo tu mejor alternativa
+                                    logrando
+                                    combinar la reduccion de costos y la calidad de nuestro servicio</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </div>
+
+        <div id="services">
+            <div class="service-head text-center">
+                <h3>Nuestros <strong>Servicios</strong></h3>
             </div>
-            <div class="carousel-item active carousel-item-start" data-interval="500">
-                <div class="overlay-image" style="background-image: url(./img/slider3.jpg);"></div>
+            <div class="container-fluid">
+                <div class="row justify-content-center justify-content-md-around justify-content-lg-center py-5">
+                    <div class="card cardServices col-10 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <img class="card-img-top w-100" src="./img/card-1.jpg" alt="">
+                        <div class="card-body1 justify-content-center">
+                            <h5 class="card-title">Cargas Generales</h5>
+                            <p class="card-text">Cargas de paquetería, desde paquetes de 1/2 Kg hasta cargas paletizadas
+                                o
+                                que requieran alguna unidad especial</p>
+                        </div>
+                    </div>
 
+                    <div class="card cardServices col-10 col-md-3 offset-lg-1 p-5" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <img class="card-img-top w-100" src="./img/card-2.jpg" alt="">
+                        <div class="card-body2 justify-content-center">
+                            <h5 class="card-title">Última Milla</h5>
+                            <p class="card-text">Transporte directo desde su comercio al domicilio del destinatario</p>
+                        </div>
+                    </div>
 
-                <div class="container">
-                    <div class="carousel-caption text-lg-end">
-                        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Contamos con</h3>
-                        <p class="animate__animated animate__fadeInUp animate__delay-1s">Cobertura a nivel nacional en la Republica Argentina</p>
-                        <p class="animate__animated animate__fadeInUp animate__delay-1s"><a class="btn btn-lg btn-primary" href="#">Contactate con nosotros</a></p>
+                    <div class="card cardServices col-10 col-md-3 offset-lg-1 p-5" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <img class="card-img-top w-100" src="./img/card-3.jpg" alt="">
+                        <div class="card-body3 justify-content-center">
+                            <h5 class="card-title">Telemetría</h5>
+                            <p class="card-text">Herramientas amoldadas a la necesidad de cada cliente; monitoreo,
+                                cierre centralizado de puertas, sistema anti-robo y otros</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <section id="about">
-        <div class="container text-about py-4">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="logo-about d-flex justify-content-center pb-4">
-                        <img class="img-logo-about animate__animated animate__fadeInLeft animate__delay-1s" src="img/aboutUs.png" alt="logo quienes somos">
+
+        <div id="contact">
+            <div class="container my-5">
+                <div class="container p-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="form">
+                                <form action="contacto">
+                                    <h3 class="mb-4">Contacto</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="mb-3">
+                                                    <label for="InputName" class="form-label">Nombre completo *</label>
+                                                    <input type="text" class="form-control" id="InputName" name="name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="mb-3">
+                                                    <label for="InputEmail" class="form-label">Correo electronico *</label>
+                                                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" name="email" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="mb-3">
+                                                    <label for="InputPhone" class="form-label">Telefono</label>
+                                                    <input type="text" class="form-control" id="InputPhone" name="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="mb-3">
+                                                    <label for="InputAsunto" class="form-label">Asunto</label>
+                                                    <input type="text" class="form-control" id="InputAsunto" name="asunto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="mb-3 d-flex flex-md-column">
+                                                    <label for="InputMessage" class="form-label">Mensaje</label>
+                                                    <textarea name="messaje" id="InputMessage" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-success w-25">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
                     </div>
-                    <div class="text-about px-lg-3 animate__animated animate__fadeInRight animate__delay-1s">
-                        <p class="px-lg-5">Somos una empresa que desde 2012 se enfoca en brindar <b>soluciones logisticas</b> y de transporte a nuestros clientes, siendo tu mejor alternativa logrando combinar la reduccion de costos y la calidad de nuestro servicio</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <aside class="contact-info-footer">
+                            <h3 class="widget-title">Contáctanos</h3>
+                            <div class="contact-info-footer">
+                                <ul class="contact-details">
+                                    <li><img src="" alt=""> <strong>Dirección:</strong> <span>etc</span></li>
+                                    <li><img src="" alt=""> <strong>Teléfono:</strong> <span>etc</span></li>
+                                    <li><img src="" alt=""> <strong>Email:</strong> <span><a
+                                                href="">transportesontime@ejemplo.com</a></span>
+                                    </li>
+                                    <li><img src="" alt=""> <strong>Horario de Atención:</strong> <span>etc</span></li>
+                                </ul>
+                            </div>
+
+                        </aside>
+                    </div>
+                    <div class="col-lg-4">
+                        <aside id="text-2" class="widget widget_text">
+                            <div class="textwidget">
+                                <p></p>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-4">
+                        <aside id="follow-us-widget-2" class="widget follow-us">
+                            <h3 class="widget-title">Seguinos</h3>
+                            <div class="share-links">
+                                <a href="https://www.instagram.com//" rel="nofollow noopener noreferrer" 
+                                    target="_blank"  class="share-instagram me-3" data-bs-original-title="Instagram"><img src="./img/instagram.png" alt="instagram-logo"></a>
+                                <a href="https://www.facebook.com//" rel="nofollow noopener noreferrer"
+                                    target="_blank" class="share-twitter mx-3" data-bs-original-title="Facebook"><img src="./img/logo-fb.png" alt="facebook-logo"></a>
+                                <a href="https://twitter.com/" rel="nofollow noopener noreferrer"
+                                    target="_blank" class="share-twitter ms-3" data-bs-original-title="Twitter"><img src="./img/twitter.png" alt="twitter-logo"></a>
+                            </div>
+
+                        </aside>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> 
+        </footer>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

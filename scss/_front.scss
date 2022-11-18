@@ -21,7 +21,7 @@ div.carousel-inner {
     }
     h1,h3{
         font-size: $txtXl;
-        font-family: $secondaryFont;
+        font-family: $mainFont;
         color: map-get($map: $pColores, $key: "white");
         @media (min-width: 992px) {
             font-size: $txtXxl;
@@ -42,26 +42,25 @@ div.carousel-inner {
     }
 }
 
-section#about {
-    
-    
+#about {
+    padding: 12rem 0 75px 0;
     background-color: rgb(255, 255, 255);
+    background-color: map-get($map: $pColores, $key: 'white');
     div.text-about {
-        &:hover{
-            p{
-                color: #000;
-                b{
-                    color: #30d5ff;
-                }
-            }
-        }
         img{
             width: 22vh;
+            margin-bottom: 5rem;
         }
         @media (min-width: 1650px) {
             padding: 0 50px 0 50px;
         }
         p{
+            &:hover{
+                color: #000;
+                b{
+                    color: #30d5ff;
+                }
+            }
             font-size: 2rem;
             color: #30d5ff;
             font-family: 'Raleway';
@@ -72,6 +71,150 @@ section#about {
             }
             b{
                 color: #000;
+            }
+        }
+    }
+}
+
+#services{
+    padding-top: 50px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0  0 2px rgb(248, 248, 248),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    .service-head{
+        border-bottom: #b6b6b6 solid 1.5px;
+        margin: 0 70px 0 70px;
+        h3{
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .cardServices{
+        border: none !important;
+        padding: 0 !important;
+        margin-top: 50px;
+        background-color: unset;
+        .card-img-top{
+            width: 12vh;
+            text-align: center;
+            height: 200px;
+        }
+        .card-body1{
+            padding: 20px 15px 5px 75px !important;
+            background-color: #eb8131;
+            background-image: url(../img/logo-carga-general.png);
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            color: rgb(0, 0, 0);
+            border-radius: 0 0 20px 0;
+            min-height: 16vh;
+
+            .card-title{
+                text-align: start;
+                font-family: 'Roboto';
+                font-size: $txtLg;
+                font-weight: 600;
+                @media (min-width:1420px) {
+                    font-size: $txtLg + 0.3rem;
+                }
+            }
+            .card-text{
+                text-align: start;
+                font-family: $secondaryFont;
+                font-size: $txtMd;
+                font-weight: 400;
+                @media (min-width:1420px) {
+                    font-size: $txtLg - 0.2rem;
+                }
+            }
+        }
+        .card-body2{
+            @extend .card-body1;
+            background-color: cadetblue;
+            background-image: url(../img/logo-ultima-milla.png);
+        }
+        .card-body3{
+            @extend .card-body1;
+            background-color: rgb(131, 95, 160);
+            background-image: url(../img/logo-telemetria.png);
+
+        }
+    }
+}
+
+#contact{
+    #form{
+        h3{
+            font-size: 3em;
+            font-family: 'Raleway';
+            font-weight: 600;
+        }
+        .form-group{
+            color: #6b6b6b;
+            label{
+                font-size: 1.8em;
+                font-family: 'Raleway';
+                font-weight: 500;
+            }
+            input{
+                border-radius: 4px;
+                font-size: 1.5em;
+            }
+            textarea{
+                border: 1px solid;
+                padding: 8px 12px;
+                font-size: 1.5em;
+                height: auto;
+                border-color: #d8d8d8;
+                border-radius: 4px;
+            }
+        }
+        .form-textarea{
+            display: flex;
+            flex-direction: column;
+        }
+        .btn-success{
+            font-size: 1.5em;
+        }
+    }
+}
+
+#footer{
+    background-color: #1a1c2b;
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 2.4rem;
+        .row{
+            color: white;
+            font-family: 'Open Sans';
+            h3{
+                font-size: 1.6em;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .contact-info-footer{
+                li{
+                    font-size: 1.5em;
+                    strong{
+                        font-weight: 400;
+                    }
+                }
+            }
+            .share-links{
+
+                img{
+                    width: 5vw;
+                    @media (min-width:992px) {
+                        width: 3vw;
+                    }
+                    @media (min-width:1200px) {
+                        width: 2.5vw;
+                    }
+                }
             }
         }
     }
